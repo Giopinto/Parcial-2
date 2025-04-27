@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+}
+
+.logo {
+    width: 100px;
+}
+
+.social-icons i {
+    font-size: 50px;
+    margin-left: 15px;
+    transition: transform 0.3s;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+}
+
+.social-icons a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.social-icons a:visited,
+.social-icons a:active,
+.social-icons a:focus {
+    color: inherit; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px 0;
+}
+
+.navbar a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.mision {
+    background-color: #e1f5fe; 
+    border: 2px solid black;
+    padding: 10px;
+}
+.mision p {
+    text-align: justify;
+}
+
+.mapa img {
+    width: 100%;
+    height: auto;
+    background-color: #e0e0e0; 
+}
+
+.vision {
+    background-color: #fff3e0; 
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.vision p {
+    text-align: justify;
+}
+
+.objetivo-general {
+    background-color: #f1f8e9; 
+    grid-column: 1 / 4;
+    margin-top: 20px;
+    padding: 16px;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+
+.objetivo-general .text {
+    flex: 1;
+}
+
+.objetivo-general .escudo {
+    width: 100px;
+    margin-left: 20px;
+}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFPEM</title>
+    <script src="https://kit.fontawesome.com/55929c1e4f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img src="https://usac.edu.gt/wp-content/uploads/2025/01/2018_directorio_especificas121.png" alt="Logo EFPEM" class="logo">
+        <div class="social-icons">
+            <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.tiktok.com/es/"><i class="fa-brands fa-tiktok"></i></a>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="empleado.html">Empleados</a>
+        <a href="sueldo.html">Sueldo líquido</a>
+    </nav>
+
+    <main class="main-content">
+        <section class="formulario">
+            <h2>Empleado</h2>
+            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="date" id="fecha" placeholder="Fecha de ingreso">
+            <input type="text" id="puesto" placeholder="Puesto">
+            <input type="number" id="salario" placeholder="Salario">
+            <button id="guardar">Guardar</button>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Usac_logo.png" alt="Escudo" class="escudo">
+        </section>
+
+        <section class="tabla-empleados">
+            <h2>Lista de empleados</h2>
+            <div class="botones-tabla">
+                <button id="eliminarPrimero">Eliminar primero</button>
+                <button id="eliminarUltimo">Eliminar último</button>
+            </div>
+            <table id="tabla">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Fecha de ingreso</th>
+                        <th>Puesto</th>
+                        <th>Salario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Empleados se agregan aquí -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>
