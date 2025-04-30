@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFPEM</title>
+    <script src="https://kit.fontawesome.com/55929c1e4f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <script defer src="sueldoliquido.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img src="https://usac.edu.gt/wp-content/uploads/2025/01/2018_directorio_especificas121.png" alt="Logo EFPEM" class="logo">
+        <div class="social-icons">
+            <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.tiktok.com/es/"><i class="fa-brands fa-tiktok"></i></a>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="empleado.html">Empleados</a>
+        <a href="sueldo.html">Sueldo líquido</a>
+    </nav>
+
+    <main class="main-content">
+        <section class="ingresos-egresos">
+            <div class="ingresos">
+                <h2>Ingresos</h2>
+                <input type="number" id="salario" placeholder="Salario">
+                <input type="number" id="bonificacion" placeholder="Bonificación">
+                <input type="number" id="comisiones" placeholder="Comisiones">
+            </div>
+
+            <div class="egresos">
+                <h2>Egresos</h2>
+                <input type="number" id="ahorro" placeholder="Ahorro">
+                <input type="number" id="prestamos" placeholder="Préstamos / otros descuentos">
+            </div>
+        </section>
+
+        <button id="calcular">Obtener sueldo líquido</button>
+
+        <section class="resultados" id="resultados">
+            <!-- Aquí se mostrarán los resultados -->
+        </section>
+
+        <div class="escudo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Usac_logo.png" alt="Escudo" class="escudo">
+        </div>
+    </main>
+</body>
+</html>
